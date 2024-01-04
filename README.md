@@ -32,5 +32,16 @@ Approach:
 5. Query the SQL data warehouse:
 	 SQL queries are used to retrive the data for the given perticular scenario.
 
+Work flow:
+1. The user has to give a valid channel ID in the given text box.
+
+2. On click of the button "collect and store", the data is fetched from the Youtube using the API key and it is stored in the MongoDB repository. Either if the channel ID given is already stored, or for an invalid channel ID a proper message will be popped.
+
+3. On click of the button "Generate", the channel table, playlist table, videos table and comment table will be created.
+
+4. The entire table can be viewed using the tab created for the purpose.
+
+5. The recommended 10 queries has been created as a drop down list, the user can select any query to view the result.
+
 Disclaimer:
 	 Respecting YouTube's terms and conditions, the data has been collected ethically and has not been misused anywhere during the entire process.
