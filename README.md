@@ -33,7 +33,7 @@ Approach:
 	 SQL queries are used to retrive the data for the given perticular scenario.
 
 Work flow:
-1. The user has to give a valid channel ID in the given text box.
+1. The user has to give a valid channel ID in the given text box. In the case of an invalid channel ID a warning message will be displayed. Also for already added channel details, a message will be displayed accordingly.
 
 2. On click of the button "collect and store", the data is fetched from the Youtube using the API key and it is stored in the MongoDB repository. Either if the channel ID given is already stored, or for an invalid channel ID a proper message will be popped.
 
