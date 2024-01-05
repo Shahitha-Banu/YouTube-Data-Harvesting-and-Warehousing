@@ -488,7 +488,7 @@ with st.sidebar:
 st.subheader(":red[YOUTUBE DATA HARVESTING AND WAREHOUSING]",divider = "rainbow")
 
 #Getting channel id from the user 
-channel_id = st.text_input("Enter the Channel id")
+channel_id = st.text_input(":violet[Enter the Channel id]")
 
 #Updation of channel data to MongoDB
 if st.button("Collect and Store"):
@@ -541,7 +541,7 @@ cursor = mydb.cursor()
 
 #Creating a drop-down box for choosing the query need to be viewed
 
-question = st.selectbox("",
+question = st.selectbox(":violet[SQL Query Output need to displayed as table]",
     ('1.What are the names of all the videos and their corresponding channels?',
      '2.Which channels have the most number of videos, and how many videos do they have?',
      '3.What are the top 10 most viewed videos and their respective channels?',
